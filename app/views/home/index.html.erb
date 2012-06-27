@@ -1,0 +1,32 @@
+<header class = "home-header">
+	<div class = "title">
+ 		<h2>Railery</h2>
+	</div>
+</header>
+<div class = "mid-header"></div>
+
+<div class = "home-body">
+<div class = "container">	
+	<div class = "mid-box">
+	<div class = "body-image"></div>
+		<div class = "sign-in-form">
+			<%= form_for("user", :url => user_session_path) do |f| %>
+		  	<%= f.text_field :email, class: "home-page", placeholder: "Email-id" %>
+		  	<%= f.password_field :password, class: "home-page", placeholder: "Password"%><br/>
+			<div class = "box-button">
+			<%= f.submit 'Sign in' , class: "sign-in-button"%><br/>
+		  	<div class = "remember-me">
+			<%= f.check_box :remember_me %>
+		  	<%= f.label :remember_me %><br/>
+			<%= link_to "Forgot your password?", new_password_path('user') %> 
+			</div>
+			</div>
+		<% end %>
+		</div>
+	</div>
+</div>
+</div>
+
+<footer class  ="home-footer">
+	
+</footer>

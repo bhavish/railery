@@ -1,0 +1,125 @@
+// Place all the styles related to the user controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.dashboard-body {
+	background: #fff url("ice_age.png");
+	height:1000px;
+	clear:both;
+	.container {
+		width:960px;
+		margin:0 auto;
+		background: rgb(0,0,0);
+		opacity:0.4;
+		height:1000px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		.left-side {
+			position:relative;
+			background:#fff;
+			width:300px;
+			height:250px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			margin:0 10px 5px 25px;
+			padding:5px;
+			float:left;	
+			.short-profile {
+				clear:both;
+				display:block;
+				.top-box{
+					.profile-image {
+						width:100px;
+						height:100px;
+						clear:left;
+						float:left;
+						position:relative;
+						display:block;	
+					}
+					.user-name{
+						float:left;
+						padding:3px;
+						margin:15px 5px;
+					}	
+				}
+				.lower-box {
+					clear:both;
+					position:relative;
+					.information {
+						margin:3px;
+						padding:5px;
+						.inner-box{
+							margin:5px;
+							padding:15px;
+							border-bottom: 1px solid #000;
+							.shout {
+								display:inline;
+								float:left;
+								clear:left;
+							}
+							.t-numbers{
+								float:right;
+								padding-right:20px;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		.right-side {
+			background:#fff;
+			width:500px;
+			height:900px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			margin:0 40px 5px 15px;
+			padding:5px;
+			float:right;
+			display:block;
+			clear:right;
+			.linear-view-box{
+				height:300px;
+				.top-box {
+					clear:both;
+					display:block;
+					.profile-image {
+						width:500px;
+						height:100px;
+						clear:left;
+						float:left;
+						position:relative;
+						display:block;	
+					}
+					.user-name{
+						float:left;
+						padding:3px;
+						margin-right:15px;
+					}
+					.audio-data{
+						padding:15px;
+						float:right;
+					}
+					.other-stuff{
+						clear:both;
+						position:relative;
+						padding:3px;
+						margin:10px;
+						.like{
+							display:inline;
+							margin:5px;
+							padding:3px;
+							align:center;
+						}
+					}
+				}
+			}
+			
+			
+		}
+	}
+}

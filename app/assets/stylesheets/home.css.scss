@@ -1,0 +1,138 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1, p, body, html , header , footer{
+	margin:0;
+	padding:0;
+	display:block;
+}
+a, a:hover {
+text-decoration: none;
+color: black;
+
+}
+.left-title {
+	color:#fff;
+	font-family: "Courier New";
+	margin-left:250px;	
+	
+}
+
+header.home-header{
+	background: #000 bottom left repeat-x;
+	border: solid #081622;
+	height: 55px;
+	border-image: initial;
+	border-width: 1px 0;
+	width:100%;
+	
+}
+
+div.mid-header {
+	background:#d61a45 bottom left repeat-x;
+	height:35px;
+	width:100%;
+	clear:both;
+}
+
+div.home-body{
+	background:#f03b54 bottom left repeat-x;
+	width:100%;
+	height:600px;
+	clear:both;
+	.container{
+		width:960px;
+		margin:auto;
+		clear:both;
+		.mid-box{
+			padding:100px;
+			
+			
+			.sign-in-form{
+				left:480px;
+				width:350px;
+				height:200px;
+			}
+			
+		}
+		
+	}
+	
+}
+
+footer.home-footer{
+	background: #270235 bottom left repeat-x;
+	border: solid #081622;
+	height: 20px;
+	border-image: initial;
+	border-width: 1px 0;
+	width:100%;
+	
+}
+
+input.home-page {
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	margin:5px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: #C9C9C9;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #0f0;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.remember-me {
+	float:left;
+	display:inline;
+	position:relative;
+}
+
+input.sign-in-button {
+	margin:5px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+	background-color: #019AD2;
+	padding:5px;
+	border-color: #019AD2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#fff;
+	height:30px;
+	width:auto;
+	float:left;
+	cursor: pointer;
+	white-space: nowrap;
+	font-family: Arial,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+}
