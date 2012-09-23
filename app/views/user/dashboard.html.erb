@@ -1,81 +1,64 @@
-<header class = "home-header">
-	<div class = "left-title">
- 			<h2>Railery</h2>
-	</div>
-</header>
-<div class = "mid-header"></div>
-<div class = "dashboard-body">	
-	<div class = "container">
-		<div class = "margin"></div>
-		<div class = "left-side">
-			<div class = "short-profile">
-				<div class = "top-box">
-				<div class = "profile-image">
-					<!-- Put the user image in this section -->
-					<%= image_tag "profilepic2.png" , class: "profile-image" %>
-				</div>
-				<div class ="user-name">
-					<%= current_user.email %>
-				</div>
-				</div>
-				<div class = "lower-box">
-				<div class = "information">
-					<!-- this section will show the number of shout outs the user has and also the number of followers he has and 
-					the people that he is following
-					-->
-					<div class = "inner-box">
-						<!-- this will show the count of shout outs and also a button like to take to the page where all his
-						audio is present
-						 -->
-						<p><span class= "shout"> ShoutOuts </span></p>
-						<div class = "t-numbers">90</div>
-					</div>
-					<div class = "inner-box">
-						<!-- This will show people who are following the current user  -->
-						<p><span class= "shout"> Followers </span></p>
-						<div class = "t-numbers">90</div>
-					</div>
-					<div class = "inner-box">
-						<!-- this will show the people who the current user is following -->
-						<p><span class= "shout"> Following </span></p>
-						<div class = "t-numbers">90</div>
-					</div>
-				</div>
-				</div>
-			</div>
-		</div>
-		<!-- This is the left side of the page any data can be added here for the user -->
-		<div class = "right-side">
-		<div id = "upload-complete"></div>
-		<div class = "upload-form">
-			<%= simple_form_for Audio.new , :remote => true  do |f|%>
-			<%= f.input :name %>
-			<%= f.input :audio %>
-			<%= f.button :submit %>
-			<% end %>
-		</div>
-		<div class = "linear-view-box">
-			<div class = "top-box">
-				<div class = "profile-image">
-					<%= image_tag "profilepic1.png" , class: "profile-image" %>
-				</div>
-				<div class ="user-name">
-					Bhavish Sushiel Agarwal
-				</div>
-				<div class = "audio-details">
-					Something with a long data present here may be the text from audio 
-				</div>
-				<div class = "other-stuff">
-					<div class = "like">LIKE </div>
-					<div class = "like">RESHARE </div>
-					<div class = "like"> OTHERS</div>
-					<div class = "like"> COMMENT</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</div>
-</div>
-<footer class  ="home-footer">
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Wish List</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="#">Add Wish</a></li>
+              <li><a href="#about">Sign Out</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	<br/>
+	<br/>
+    <div class="container">
+		<div class="span3 pull-right">
+		          <div class="well sidebar-nav">
+		            <ul class="nav nav-list">
+		              <li class="nav-header">This is you!</li>
+                      <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+		              <li><a href="#">User details</a></li>
+		            </ul>
+		          </div><!--/.well -->
+		        </div>
+
 	
-</footer>
+      <div class="hero-unit">
+        <div class="row">
+	        <div class="span2">
+	          <h4>Wish List 1 </h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <h6> bhavish </h6>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish List 1 </h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <h6> Tom </h6>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish List 1 </h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <h6> Jerry </h6>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish List 1 </h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <h6> DBZ </h6>
+	        </div>
+		</div>
+		
+      </div>
+      <hr>
+
+      <footer>
+        <p>© Company 2012</p>
+      </footer>
+
+    </div> <!-- /container -->

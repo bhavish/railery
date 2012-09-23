@@ -1,32 +1,125 @@
-<header class = "home-header">
-	<div class = "title">
- 		<h2>Railery</h2>
-	</div>
-</header>
-<div class = "mid-header"></div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">WishList</a>
+          <div class="nav-collapse collapse pull-right">
+       				<%= form_for("user", :url => user_session_path , class: "navbar-form pull-right") do |f| %>
+				  	<%= f.text_field :email, class: "span2", placeholder: "Email-id" %>
+				  	<%= f.password_field :password, class: "span2", placeholder: "Password"%>
+					<%= f.submit 'Sign in' , class: "btn"%>
+					<% end %>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class = "home-body">
-<div class = "container">	
-	<div class = "mid-box">
-	<div class = "body-image"></div>
-		<div class = "sign-in-form">
-			<%= form_for("user", :url => user_session_path) do |f| %>
-		  	<%= f.text_field :email, class: "home-page", placeholder: "Email-id" %>
-		  	<%= f.password_field :password, class: "home-page", placeholder: "Password"%><br/>
-			<div class = "box-button">
-			<%= f.submit 'Sign in' , class: "sign-in-button"%><br/>
-		  	<div class = "remember-me">
-			<%= f.check_box :remember_me %>
-		  	<%= f.label :remember_me %><br/>
-			<%= link_to "Forgot your password?", new_password_path('user') %> 
-			</div>
-			</div>
-		<% end %>
-		</div>
-	</div>
-</div>
-</div>
+    <div class="container">
+	<br/>
+	<br/>
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+	      <div class="row">	
+	        <div class="span2">
+	          <h4>Wish List 1 </h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <p> User Name </p>
+			  <p> User Name </p>	
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Wish list 2 </h4>	
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+    			  <p> User Name </p>
+    			  <p> User Name </p>
+	        </div>
 
-<footer class  ="home-footer">
-	
-</footer>
+	        <div class="span2">
+	          <h4>Heading</h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <p> User Name </p>
+			  <p> User Name </p>	
+	        </div>
+	        <div class="span2">
+	          <h4>Heading</h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <p> User Name </p>				
+			  <p> User Name </p>	
+	        </div>
+	        <div class="span2">
+	          <h4>Heading</h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <p> User Name </p>
+			  <p> User Name </p>
+	        </div>
+	        <div class="span2">
+	          <h4>Heading</h4>
+			  <img src="http://d2.yimg.com/sr/img/1/96a211af-2dc7-34cd-bfb0-f997035f0287" class="img-rounded">
+			  <p> User Name </p>
+			  <p> User Name </p>
+	        </div>
+	      </div>
+      </div>
+      <hr>
+      <footer>
+        <p>© Company 2012</p>
+      </footer>
+
+    </div> <!-- /container -->

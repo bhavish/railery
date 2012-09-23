@@ -39,7 +39,14 @@ class User
   ## Token authenticatable
  field :authentication_token, :type => String
  
- has_many :audios , class_name: "Audio", inverse_of: :users
+ has_many :audios , class_name: "Audio", inverse_of: :user
+ 
+ has_many :followers , class_name: "User", inverse_of: :user
+ 
+ belongs_to :users , class_name: "User", inverse_of: :followers
+ 
+ has_many :screams , class_name: "Audio", inverse_of: :user
+ 
  
  
 end

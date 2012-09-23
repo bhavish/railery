@@ -13,6 +13,7 @@ gem 'fog'
 gem 'simple_form'
 gem 'remotipart', '~> 0.4'
 
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

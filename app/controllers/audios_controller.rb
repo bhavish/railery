@@ -12,6 +12,7 @@ class AudiosController < ApplicationController
         format.js
       end
     else
+      
     end
   else
     Rails.logger.debug { "The user is not signed in" }
